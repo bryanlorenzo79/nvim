@@ -23,6 +23,8 @@ return require('packer').startup(function(use)
 	use('tpope/vim-commentary')
 	use('m4xshen/autoclose.nvim')
   use('vimwiki/vimwiki')
+  use('lukas-reineke/indent-blankline.nvim')
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
 
 	use {
@@ -39,6 +41,8 @@ return require('packer').startup(function(use)
 			{'hrsh7th/nvim-cmp'},
 			{'hrsh7th/cmp-nvim-lsp'},
 			{'L3MON4D3/LuaSnip'},
+      {'saadparwaiz1/cmp_luasnip'},
+      {'rafamadriz/friendly-snippets'}
 		}
 	}
 

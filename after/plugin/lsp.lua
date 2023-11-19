@@ -17,7 +17,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = {'rust_analyzer'},
+	ensure_installed = {'rust_analyzer', 'tsserver'},
 	handlers = {
 		lsp_zero.default_setup,
 		lua_ls = function()
@@ -46,3 +46,5 @@ cmp.setup({
 		['<C-Space>'] = cmp.mapping.complete(),
 	}),
 })
+
+lsp_zero.setup()
